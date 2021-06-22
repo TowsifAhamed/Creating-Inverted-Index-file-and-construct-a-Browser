@@ -1,0 +1,21 @@
+<html>
+<head>
+
+</head>
+<body>
+<form style="text-align: center; padding: 3rem;" method="post">
+    {% csrf_token %}
+    <input id="search" type="text" name="search" style="width: 10rem; height: 2rem;">
+    <input type="submit" value="Search" style="margin-left: 2rem; width: 5rem; height: 2rem;">
+</form>
+<div style="padding: 4rem; padding-top: 0rem;">
+    {% for r in res %}
+        <b> <a href="{{r.link}}">{{r.title}}</a></b><br>
+        <p> <b>{{ r.authors }}</b> <br>
+         {{ r.date }} <br>
+         {{ r.summary }} <br>
+         {{ r.citation }} </p><br>
+    {% endfor %}
+</div>
+</body>
+</html>
