@@ -13,4 +13,4 @@ A query is performed in the frontend which is searched through the words of the 
 If the word is found then the corresponding data of the indexes from the main data "papers.csv" is returned and shown.
 check it in the views file of the query app.
 
-! [Screenshot of a successful query] (https://github.com/TowsifAhamed/Creating-Inverted-Index-file-and-construct-a-Browser/blob/master/Screenshot%20of%20a%20successful%20query.png)
+![Screenshot of a successful query](Screenshot%20of%20a%20successful%20query.png)
